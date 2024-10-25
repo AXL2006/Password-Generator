@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Password Generator</h1>
+        <p class="version">Alpha 0.1.0</p>
+
+        <!-- Password Difficulty -->
+        <div class="section">
+            <label>Password Difficulty</label>
+            <div class="difficulty-buttons">
+                <button class="difficulty" id="easy">EASY</button>
+                <button class="difficulty active" id="medium">MEDIUM</button>
+                <button class="difficulty" id="hard">HARD</button>
+            </div>
+        </div>
+
+        <!-- Password Length -->
+        <div class="section">
+            <label>Password Length</label>
+            <div class="length-selector">
+                <button id="decrease-length">&lt;</button>
+                <span id="password-length">8</span>
+                <button id="increase-length">&gt;</button>
+            </div>
+        </div>
+
+        <!-- Special Characters -->
+        <div class="section">
+            <label>Special Characters</label>
+            <div class="toggle">
+                <button class="toggle-button" id="special-no">No</button>
+                <button class="toggle-button active" id="special-yes">Yes</button>
+            </div>
+        </div>
+
+        <!-- Numbers -->
+        <div class="section">
+            <label>Numbers</label>
+            <div class="toggle">
+                <button class="toggle-button" id="numbers-no">No</button>
+                <button class="toggle-button active" id="numbers-yes">Yes</button>
+            </div>
+        </div>
+
+        <!-- Password Result -->
+        <div class="section">
+            <label>Result</label>
+            <input type="text" id="password-result" readonly>
+        </div>
+
+        <!-- Action Buttons -->
+        <div class="actions">
+            <button id="copy">Copy</button>
+            <button id="regenerate">Regenerate</button>
+            <button id="edit">Edit</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

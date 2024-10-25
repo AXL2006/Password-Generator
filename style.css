@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #eef2f7;
+}
+
+.container {
+    width: 300px;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #93b3c8;
+}
+
+.version {
+    font-size: 12px;
+    color: #93b3c8;
+    margin-bottom: 20px;
+}
+
+.section {
+    margin: 10px 0;
+}
+
+label {
+    font-size: 14px;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.difficulty-buttons,
+.toggle,
+.length-selector,
+.actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.difficulty,
+.toggle-button,
+button {
+    padding: 10px;
+    background-color: #e0e4e8;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 12px;
+    flex: 1;
+    margin: 0 5px;
+}
+
+.difficulty.active,
+.toggle-button.active {
+    background-color: #4a5861;
+    color: white;
+}
+
+#password-length {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#password-result {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    background-color: #e0e4e8;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    margin: 10px 0;
+}
+
+button {
+    flex: 1;
+    font-size: 14px;
+}
+
+button:hover {
+    background-color: #ccd1d6;
+}
